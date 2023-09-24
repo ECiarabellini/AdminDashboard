@@ -8,7 +8,179 @@
 
 </head>
 <body>
-    <h2>Bonjour, Emily!</h2>
+    <div class="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="top-nav">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Profile</li>
+            <li class="nav-item">Messages</li>
+            <li class="nav-item">History</li>
+            <li class="nav-item">Tasks</li>
+            <li class="nav-item">Communities</li>
+        </ul>
+        <ul class="bottom-nav">
+            <li class="nav-item">Settings</li>
+            <li class="nav-item">Support</li>
+            <li class="nav-item">Privacy</li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="header-row-1">
+            <div class="search-section">
+                <button type="submit" id="search-button">
+                    <img src="search.svg" id="search-button-icon" alt="search-icon"/>
+                </button>
+                <input type="search-text" name="search" id="search">
+            </div>
+            <div class="user-section">
+                <button type="button" id="notification-icon">
+                    <img src="notification-bell.svg" alt="bell-icon">
+                </button>
+                <img src="daisy.jpg" alt="daisy" class="user-profile-img" id="header-row1-profile-img">
+                <div id="user-name">Morgan Oakley</div>
+            </div>
+
+        </div>
+        <div class="header-row-2">
+            <div class="header-bottom-left">
+                <img src="daisy.jpg" alt="daisy" class="user-profile-img" id="header-row2-profile-img">
+                <div id="welcome-greeting">Hi there,</div>
+                <div class="username">Morgan Oakley (@morgan)</div>
+            </div>
+            <div class="header-row-2-actions">
+                <button class="header button new">New</button>
+                <button class="header button upload">Upload</button>
+                <button class="header button share">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="your-projects">
+            <div class="content-header">Your Projects</div>
+            <div class="project-cards">
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>        
+                </div>
+                <div class="card">
+                    <p class="title">Also Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>        
+                </div>
+                <div class="card">
+                    <p class="title">Regrettable Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>        
+            </div>
+                <div class="card">
+                    <p class="title">Favorite Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>   
+                </div>
+                <div class="card">
+                    <p class="title">Forgotten Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>   
+                </div>
+                <div class="card">
+                    <p class="title">Most Important Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <button type="button">
+                        <img src="star.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="open.svg" alt="buttonpng"/>
+                    </button>
+                    <button type="button">
+                        <img src="share.svg" alt="buttonpng"/>
+                    </button>   
+                </div>
+            </div>
+        </div>
+        <div class="announcements">
+            <div class="content-header">Announcements</div>
+            <div class="announcement-card">
+                <div class="announcement-card-header">Site Maintenance</div>
+                <div class='announcement-body'>Sed ut perspiciatis unde omnis iste natus sit voluptatem</div>
+            </div>
+            <div class="announcement-card">
+                <div class="announcement-card-header">Community Celebration</div>
+                <div class='announcement-body'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</div>
+            </div>
+            <div class="announcement-card">
+                <div class="announcement-card-header">Updated Privacy Policy</div>
+                <div class='announcement-body'>Neque porro quisquam est, qui dolorem ipsum pariatur</div>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="content-header">Trending</div>
+            <div class="trending-card">
+                <div class="trending-image"><img src="" alt=""></div>
+                <div class="trending-handle">@tegan</div>
+                <div class="trending-name">World Peace Builder</div>
+            </div>
+            <div class="trending-card">
+                <div class="trending-image"><img src="" alt=""></div>
+                <div class="trending-handle">@morgan</div>
+                <div class="trending-name">Super Cool Project</div>
+            </div>
+            <div class="trending-card">
+                <div class="trending-image"><img src="" alt=""></div>
+                <div class="trending-handle">@kendal</div>
+                <div class="trending-name">Life-Changing App</div>
+            </div>
+            <div class="trending-card">
+                <div class="trending-image"><img src="" alt=""></div>
+                <div class="trending-handle">@alex</div>
+                <div class="trending-name">Seller of Houses</div>
+            </div>
+
+
+        </div>
+    </div>
 
 
 
