@@ -15,13 +15,11 @@ button,
 button img{
     background-color: white;
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
-.button:active,
-#search-button:active,
-#notification-icon:active{
+button:active{
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
@@ -43,7 +41,6 @@ body{
 .header{
     grid-row: 1 / 2;
     grid-column: 2 / -1;
-    /* border: 5px solid black; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
@@ -66,19 +63,16 @@ body{
     width: 35px;
     height: 35px;
     border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
 #search-button,
-#notification-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+#notification-icon,
 .search-section{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -91,26 +85,28 @@ body{
     background-color: #dfebf5;
     border-radius: 20px;
     width: clamp(100px, 100%, 400px);
+    border: none;
+    height: 20px;
 }
 
-.user-section{
+.user-section,
+.header-row-2-actions{
     grid-column: 2 / 3;
     display: flex;
     align-items: center;
-    justify-content: end;
     width: clamp(120px, 100%, 200px);
+    justify-self: flex-end;
 }
-#notification-icon,
-#header-row1-profile-img,
-#user-name{
-    margin-left: 20px;
-    margin-right: 20px;
+
+
+.username{
+    white-space:nowrap;
 }
 
 .header-row-2{
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -118,18 +114,6 @@ body{
     grid-column: 1/2;
 }
 
-.header-row-2-actions{
-    grid-column: 2 / -1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#header-row2-profile-img{
-    width: 55px;
-    height: 55px;
-    border-radius: 100px;
-}
 
 .header .button{
     background-color: #ff007f;
@@ -142,4 +126,41 @@ body{
     justify-content: center;
     align-items: center;
     border: none;
+}
+
+.header-bottom-left{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#header-row2-profile-img{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    align-self: center;
+    margin-right: 200px;
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+
+}
+
+#welcome-greeting{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 14px ;
+    display: flex;
+    align-items: flex-end;
+}
+
+#username-greeting{
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-bottom-left .username{
+    font-size: 20px;
+    font-weight: 700;
 }
