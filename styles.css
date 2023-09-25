@@ -224,10 +224,12 @@ body{
 }
 
 .project-cards{
-   margin-right: 5px;
-    display: flex;
+    margin-right: 5px;
     gap: 20px;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     
 }
 .card{
@@ -283,11 +285,12 @@ body{
 }
 
 .announcements-cards,
-.trending-cards{
+.trending-cards-section{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     width: clamp(200px, 220px, 300px);
+    margin: 20px
 }
 
 .announcements-cards{
@@ -313,5 +316,37 @@ body{
 
 .announcement-card-header{
     font-weight: 700;
+}
+
+.trending-image img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.trending-card{
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    grid-template-rows: 50px;
+    margin-bottom: 5px;
+}
+
+.trending-card #trending-card-4{
+    margin-bottom: 0;
+}
+
+.trending-text{
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.trending-handle{
+    font-weight: 700;
+    
 }
 
