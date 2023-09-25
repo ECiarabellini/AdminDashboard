@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="dashboard"><img src="dashboard.svg" alt="dashboard"><div class="side-item-text">Dashboard</div></div>
+        <div class="dashboard"><img src="dashboard.svg" alt="dashboard" id="dashboard-icon"><div class="side-item-text">Dashboard</div></div>
         <ul class="top-side">
             <li class="side-item">
                 <img src="home.svg" alt="home" class="sidebar-icon">
@@ -87,82 +87,105 @@
             <div class="content-header">Your Projects</div>
             <div class="project-cards">
                 <div class="card">
-                    <p class="title">Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>        
+                    <div class="card-text">
+                        <div class="card-title">Super Cool Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
+                </div>                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Less Cool Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
                 </div>
                 <div class="card">
-                    <p class="title">Also Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>        
+                    <div class="card-text">
+                        <div class="card-title">Just OK Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
                 </div>
                 <div class="card">
-                    <p class="title">Regrettable Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>        
-            </div>
-                <div class="card">
-                    <p class="title">Favorite Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>   
+                    <div class="card-text">
+                        <div class="card-title">Dreaded Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
                 </div>
                 <div class="card">
-                    <p class="title">Forgotten Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>   
+                    <div class="card-text">
+                        <div class="card-title">Amazing Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
                 </div>
                 <div class="card">
-                    <p class="title">Most Important Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <button type="button">
-                        <img src="star.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="open.svg" alt="buttonpng"/>
-                    </button>
-                    <button type="button">
-                        <img src="share.svg" alt="buttonpng"/>
-                    </button>   
+                    <div class="card-text">
+                        <div class="card-title">Avoidable Project</div>
+                        <div class="card-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button">
+                            <img src="star.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="open.svg" alt="buttonpng"/>
+                        </button>
+                        <button type="button">
+                            <img src="share.svg" alt="buttonpng"/>
+                        </button>
+                    </div>    
                 </div>
             </div>
         </div>
