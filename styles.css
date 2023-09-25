@@ -214,17 +214,20 @@ body{
     padding-left: 15px;
     padding-top: 20px;
     display: grid;
-    grid-template: 450px 450px / 3fr 1fr
+    grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+}
+
+.your-projects{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .project-cards{
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: repeat(3, 150px);
-    gap: 15px;
-
+   margin-right: 5px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     
 }
 .card{
@@ -235,6 +238,8 @@ body{
     padding: 15px;
     display: grid;
     grid-template-rows: 1fr 30px;
+    height: 150px;
+    width: 200px;
 }
 
 .card .card-title{
@@ -245,14 +250,10 @@ body{
     margin-bottom: 4px;
 }
 
-.announcements{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
 .trending{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin-right: 10px;
 }
 
 .card-text{
@@ -272,5 +273,45 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.announcements{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-right: 10px;
+
+}
+
+.announcements-cards,
+.trending-cards{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: clamp(200px, 220px, 300px);
+}
+
+.announcements-cards{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#middle-announcement-card{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#top-announcement-card{
+    margin-bottom: 10px;
+}
+
+#bottom-announcement-card{
+    margin-top: 10px;
+}
+
+.announcement-card-header{
+    font-weight: 700;
 }
 
