@@ -347,6 +347,10 @@ body{
 
 .trending-handle{
     font-weight: 700;
-    
+}
+
+#trending-header,
+#announcement-header{
+    margin-left: 20px;
 }
 
