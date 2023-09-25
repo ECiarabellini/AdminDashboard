@@ -44,8 +44,8 @@ body{
     grid-column: 2/5;
     grid-row: 2/3s;
     background-color: #dfebf5;
-    /* margin-top: 20px; */
     padding-left: 15px;
+    padding-top: 20px;
     
 }
 
@@ -196,4 +196,18 @@ body{
     font-size: 23px;
     font-weight: 600;
     padding-top: 20px;
+}
+
+.side-item{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.top-side{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.side-item-text{
+    margin-left: 15px;
 }
