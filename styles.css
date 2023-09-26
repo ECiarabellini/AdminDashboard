@@ -25,6 +25,7 @@ button:active{
 }
 
 body{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: grid;
     grid-template-columns: clamp(180px, 20%, 210px) 2fr;
     grid-template-rows: 130px 1fr;
@@ -214,7 +215,7 @@ body{
     padding-left: 15px;
     padding-top: 20px;
     display: grid;
-    grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 325px 1fr 1fr 1fr 1fr;
     grid-template-columns: 4fr 1fr;
 }
 
